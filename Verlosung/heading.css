@@ -1,0 +1,46 @@
+:root{
+    --neon1:#4deeea; /* Cyan */
+    --neon2:#74ee15; /* Green */
+    --neon3:#ffe700; /* Yellow */
+    --neon4:#f000ff; /* Pink */
+    --neon5:#001eff; /* Blue */
+}/* var(--neon)*/
+
+*{
+    line-height: 1.5;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.text{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    filter: url(#fire);
+}
+h1{
+    position: relative;
+    color: white;
+    font-weight: 600;
+    font-size: 12em;
+    -webkit-box-reflect: below -120px linear-gardient(transparent, black);
+    text-shadow:    0 0 10px var(--neon3),
+                    0 0 40px var(--neon1),
+                    0 0 80px var(--neon2),
+                    0 0 160px var(--neon5),
+                    0 0 200px var(--neon4);
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vh;
+    background: black;
+}
+

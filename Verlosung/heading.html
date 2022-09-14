@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-_-</title>
+    <link rel="stylesheet" href="heading.css">
+    <a href="verlosung.html" id="win"></a>
+    
+</head>
+
+<body id="headings">
+    <div class="firstShown">
+
+        <div id="body">
+            <!-- Heading - Fifa 23 -->
+            <div class="text">
+                <h1>FIFA 23</h1>
+            </div>
+            <svg>
+                <filter id="fire">
+                    <feTurbulence id="turbulence" baseFrequency="0.1 0.1" numOctaves="2" seed="3">
+                        <animate attributeName="baseFrequency" dur="10s" values="0.1 0.1;0.12 0.2"
+                            repeatCount="indefinite"></animate>
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="25"></feDisplacementMap>
+                </filter>
+            </svg>
+        </div>
+
+        <div id="body">
+            <!-- Heading - Verlosung -->
+            <div class="text">
+                <h1>Verlosung</h1>
+            </div>
+            <svg>
+                <filter id="fire">
+                    <feTurbulence id="turbulence" baseFrequency="0.1 0.1" numOctaves="2" seed="3">
+                        <animate attributeName="baseFrequency" dur="10s" values="0.1 0.1;0.12 0.2"
+                            repeatCount="indefinite"></animate>
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="25"></feDisplacementMap>
+                </filter>
+            </svg>
+        </div>
+
+        <div id="body">
+            <!-- Heading - Von Elevengamer -->
+            <div class="text">
+                <h1>von Elevengamer_</h1>
+            </div>
+            <svg>
+                <filter id="fire">
+                    <feTurbulence id="turbulence" baseFrequency="0.1 0.1" numOctaves="2" seed="3">
+                        <animate attributeName="baseFrequency" dur="10s" values="0.1 0.1;0.12 0.2"
+                            repeatCount="indefinite"></animate>
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="25"></feDisplacementMap>
+                </filter>
+            </svg>
+        </div>
+    </div>
+</body>
+<script defer>
+    let heads = document.getElementById('headings').addEventListener('click', (e) => {
+        let links = document.getElementById('win');
+        links.click();
+    });
+</script>
+</html>

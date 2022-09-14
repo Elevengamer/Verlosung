@@ -1,0 +1,151 @@
+* {
+    line-height: 1.5;
+}
+
+body {
+    background: black;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    max-width: 100vh;
+
+    border-radius: 50px;
+
+
+    animation: rainbow 5s infinite;
+}
+
+.inputs {
+    margin: 4px;
+    align-items: center;
+}
+
+#name {
+    margin-left: 40px;
+    width: 150px;
+}
+
+#email {
+    margin-left: 39px;
+    width: 150px;
+}
+
+#psw {
+    margin-left: 14px;
+    width: 150px;
+}
+
+#console {
+    margin-left: 25px;
+    width: 150px;
+}
+
+#inpBtn {
+    margin-top: 10px;
+    margin-left: 92px;
+    animation: rainbow 5s infinite;
+    width: min-content;
+    border-radius: 50px;
+    color: white;
+}
+
+#send {
+    font-weight: bold;
+    padding: 5px;
+    width: 160px;
+    background: transparent;
+    border-radius: 50px;
+    color: currentColor;
+
+}
+
+@media(min-width:1200px) {
+    body {
+        margin: 150px;
+        height: 100vh;
+        box-shadow:
+            0 0 15px 2px black,
+            0 0 15px 20px #001eff,
+            0 0 20px 40px #f000ff,
+            0 0 20px 60px #ffe700,
+            0 0 20px 80px #74ee15,
+            0 0 20px 100px #4deeea,
+            0 0 5px 140px black,
+            inset 0 0 15px 2px black,
+            inset 0 0 15px 20px #001eff,
+            inset 0 0 20px 40px #f000ff,
+            inset 0 0 20px 60px #ffe700,
+            inset 0 0 20px 80px #74ee15,
+            inset 0 0 20px 100px #4deeea,
+            inset 0 0 5px 140px black;
+
+        animation: none;
+
+        background: black;
+        padding: 0px;
+        color: white;
+        max-width: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .mainContainer {
+        width: 50%;
+        background: black;
+        color: white;
+        margin: 0px auto;
+        padding: 45px;
+        box-shadow:
+            0 0 15px 3px black,
+            0 0 15px 10px #001eff,
+            0 0 20px 20px #f000ff,
+            0 0 20px 30px #ffe700,
+            0 0 20px 40px #74ee15,
+            0 0 10px 50px #4deeea,
+            0 0 5px 60px black,
+            inset 0 0 15px 0.5px black,
+            inset 0 0 15px 5px #001eff,
+            inset 0 0 20px 10px #f000ff,
+            inset 0 0 20px 15px #ffe700,
+            inset 0 0 20px 20px #74ee15,
+            inset 0 0 10px 25px #4deeea,
+            inset 0 0 5px 35px black;
+        border-radius: 50px;
+    }
+}
+
+
+@keyframes rainbow{
+    0%{
+        background: #000;
+        box-shadow: 0 0 10px 5px #001eff,
+                    inset 0 0 10px 5px #001eff;
+        color: #001eff;
+    }
+    25%{
+        background: #000;
+        box-shadow: 0 0 10px 5px #f000ff,
+                    inset 0 0 10px 5px #f000ff;
+                    color: #f000ff;
+    }
+    50%{
+        background: #000;
+        box-shadow: 0 0 10px 5px #ffe700,
+                    inset 0 0 10px 5px #ffe700;
+                    color: #ffe700;
+    }
+    75%{
+        background: #000;
+        box-shadow: 0 0 10px 5px #74ee15,
+                    inset 0 0 10px 5px #74ee15;
+                    color: #74ee15;
+    }
+    100%{
+        background: #000;
+        box-shadow: 0 0 10px 5px #4deeea,
+                    inset 0 0 10px 5px #4deeea;
+                    color: #4deeea;
+    }
+}

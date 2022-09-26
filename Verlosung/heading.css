@@ -29,7 +29,7 @@ h1{
     position: relative;
     color: white;
     font-weight: 600;
-    font-size: 12em;
+    font-size: 8em;
     -webkit-box-reflect: below -120px linear-gardient(transparent, black);
     text-shadow:    0 0 10px var(--neon3),
                     0 0 40px var(--neon1),
@@ -44,3 +44,17 @@ body{
     background: black;
 }
 
+@media(min-width: 1200px){
+    h1{
+        position: relative;
+        color: white;
+        font-weight: 600;
+        font-size: 12em;
+        -webkit-box-reflect: below -120px linear-gardient(transparent, black);
+        text-shadow:    0 0 10px var(--neon3),
+                        0 0 40px var(--neon1),
+                        0 0 80px var(--neon2),
+                        0 0 160px var(--neon5),
+                        0 0 200px var(--neon4);
+    }
+}
